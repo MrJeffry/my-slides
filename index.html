@@ -47,7 +47,7 @@
 		<ul>
 			<li class="next">В IT 8 лет<img class="next" src="http://www.volskykonditer.ru/img/korovkas.jpg" alt=""></li>
 			<li class="next">В WEB разработке со школы</li>
-			<li class="next">SOKOLOV Jewerly 1 год</li>
+			<li class="next">В SOKOLOV 1 год</li>
 			<li class="next">Хочу спасти мир!</li>
 		</ul>
 		<div class="social-links next">
@@ -101,12 +101,12 @@
 	<section class="slide" id="three">
 		<h2 class="text-center">Наши интсрументы</h2>
 			<ul>
-				<li>Браузер</li>
-				<li>Интсрументы разработки в браузере</li>
-				<li>Графический редактор</li>
-				<li>Редактор кода</li>
-				<li>FTP-клиент</li>
-				<li>Система контроля версий</li>
+				<li class="next">Браузер</li>
+				<li class="next">Интсрументы разработки в браузере</li>
+				<li class="next">Графический редактор</li>
+				<li class="next">Редактор кода</li>
+				<li class="next">FTP-клиент</li>
+				<li class="next">Система контроля версий</li>
 			</ul>
 	</section>
 
@@ -178,7 +178,7 @@
 	</section>
 
 	<section class="slide" id="nine">
-		<h2>Редакторы кода</h2>
+		<h2>FTP клиенты</h2>
 		<ul>
 			<li>WinScp <a href="http://winscp.net">http://winscp.net</a></li>
 			<li>CyberDuck <a href="https://cyberduck.io">https://cyberduck.io</a></li>
@@ -187,7 +187,7 @@
 	</section>
 
 	<section class="slide" id="ten">
-		<h2>Онлайн-пеочницы</h2>
+		<h2>Онлайн-пеcочницы</h2>
 		<ul>
 			<li>JS Fiddle <a href="http://jsfiddle.net">http://jsfiddle.net</a></li>
 			<li>CSS Desk <a href="http://cssdesk.com">http://cssdesk.com</a></li>
@@ -218,24 +218,31 @@
 	<section class="slide" id="work-1">
 		<h2>Чего нельзя делать:</h2>
 		<ul>
-			<li>Стилизовать через ID</li>
-			<li>Все стили хранятся в одном файле</li>
-			<li>Соблюдается структура проекта</li>
-			<li>Наименования классов должно быть понятно другим</li>
-			<li>Придерживаемся одного stylegide</li>
-			<li>Стили пишутся только руками</li>
-			<li>Транслиту - нет!!!</li>
-			<li class="next">НЕТ ТРАНСИЛТУ!!!!! (И КАПСУ ТОЖЕ!!!!)</li>
+			<li class="next">Стилизовать через ID</li>
+			<li class="next">Хранить стили в разных файлах</li>
+			<li class="next">Не соблюдать структуру проекта</li>
+			<li class="next">Использовать наименование классов так что не понятно другим</li>
+			<li class="next">Забывать про style guide</li>
+			<li class="next">Копировать стили</li>
+			<li class="next">Использовать транслит</li>
+			<li class="next">ИСПОЛЬЗОВАТЬ ТРАНСИЛТ!!!!! <span class="next"></span>(И КАПС ТОЖЕ!!!!)</li>
+			<li class="next">brbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbr</li>
 		</ul>
+
+		<style>
+			#work-1 h2 {
+				margin-bottom: 14px;
+			}
+		</style>
 	</section>
 
 	<section class="slide" id="work-2">
 		<h2>Правила специфичности</h2>
 		<ul>
-			<li>Самый высокий приоритет имеет атрибут style. Это правило перекрывает все селекторы описанные в стилях</li>
-			<li>Второе место занимает присутствие ID в селекторе (#some-id)</li>
-			<li>Далее идут все атрибуты (в том числе и атрибут class) и псевдоклассы (pseudo-classes) в селектроре</li>
-			<li>Самый низкий приоритет у селекторов с именами элементов и псевдоэлементами</li>
+			<li class="next">Самый высокий приоритет имеет атрибут style. Это правило перекрывает все селекторы описанные в стилях</li>
+			<li class="next">Второе место занимает присутствие ID в селекторе (#some-id)</li>
+			<li class="next">Далее идут все атрибуты (в том числе и атрибут class) и псевдоклассы (pseudo-classes) в селектроре</li>
+			<li class="next">Самый низкий приоритет у селекторов с именами элементов и псевдоэлементами</li>
 		</ul>
 	</section>
 
@@ -260,7 +267,7 @@
 					<td>0,0,1,0</td>
 				</tr>
 				<tr>
-					<td>LI</td>
+					<td>li</td>
 					<td>0,0,0,1</td>
 				</tr>
 				<tr>
@@ -340,7 +347,7 @@
 
 	<section class="slide " id="work-7">
 		<h2>Простые правила</h2>
-		<p class="next">Спецефичность определяется по селектору</p>
+		<p class="next">Специфичность определяется по селектору</p>
 		<p class="next">Если она <span>одинаковая</span>, то побеждает то правило, которое <span>расположено ниже</span> в коде</p>
 		<p class="next">Чем проще селекторы, тем меньше проблем с расчетом специфичности</p>
 
@@ -431,6 +438,11 @@
 	</section>
 
 	<section class="slide" id="work-13">
+		<h2>А что не так с br</h2>
+		<p>Он ведь работает!</p>
+	</section>
+
+	<section class="slide" id="work-13">
 		<figure class="place top">
 			<img src="http://risovach.ru/upload/2017/03/mem/dedpul_141358932_orig_.jpg" alt="">
 		</figure>
@@ -447,14 +459,14 @@
 		<ul>
 			<li class="next">Выбираем стайл гайд</li>
 			<li class="next">Читаем все допы</li>
-			<li class="next">Исправляем все о чем говорили</li>
+			<li class="next">Исправляем все ошибки которые мы обсудили</li>
 			<li class="next">Лайкаем фоточки у меня в инстаграм :)</li>
 		</ul>
 	</section>
 
 	<section class="slide" id="work-15">
 		<h1 class="place center">Пока-пока!</h1>
-
+		<p class="place center bottom"><a href="https://vk.com/away.php?to=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSc1UQG0itYRM6C3fQGxyqaGhjJABpWLiwxpDsQweFuNQXXPMw%2Fviewform%3Fc%3D0%26w%3D1&el=snippet">Отвечаем на вопросы</a></p>
 		<style>
 			#work-15 h1 {
 				font-size: 80px;
