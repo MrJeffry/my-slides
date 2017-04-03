@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Вторая лекця</h1>
+		<h2>Поговорим о GIT</h2>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>Алоха!</h2>
+		<p>Я очень рад вас видеть!</p>
+		<figure>
+			<img class="" src="https://pp.userapi.com/c621819/v621819560/2d4e6/QqHERsqnoa0.jpg" alt="Hands on the orange typewriter in a park">
+		</figure>
+
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				color:#000;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#000;
+				font-style:normal;
+				font-size:24px;
+				}
+				#cover p a {
+					color:#000;
+					}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Чем мы сегодня займемся</h1>
+		<ul>
+			<li>Я расскажу вам что происходит когда...</li>
+			<li>Мы все же поговорим про GIT</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Что происходит когда мы...</h2>
+		<p class="next">вводитм в браузере адрес сайта и нажимаете Enter?</p>
+		<h2 class="next place center">Открывается сайт!</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Но копнём чуть глубже</h2>
+		<ol>
+			<li>Где физически расположен сайт?</li>
+			<li>Как об этом узнаёт браузер?</li>
+			<li>Какую службу доставки использует браузер?</li>
+			<li>Из каких частей и по каким инструкциям браузер создаёт картинку сайта?</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="http://joxi.ru/D2PKN5etpR0Nam.jpg" alt="" style="width: 100%;">
+			<p class="place bottom">Люди живут в домах, у которых есть адрес. Доехать от дома до дома можно по дорогам</p>
+		</figure>
+	</section>
+
+		<section class="slide">
+		<figure>
+			<img class="place center" src="http://www.cmewebsites.com/wp-content/uploads/2016/06/Web-server-hosting.jpg" alt="" style="width: 90%;">
+			<p class="place bottom">Сайты живут на серверах,у которых есть IP-адрес</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="http://thumbnails-visually.netdna-ssl.com/the-internets-undersea-world_50290b4c451c6_w1500.jpg" alt="" style="width: 80%;">
+			<p class="place bottom">«Доехать» от сервера до сервера можно по кабелям сети</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place center" src="http://joxi.ru/Grq184YSQY3Wxr.jpg" alt="" style="width: 90%;">
+			<p class="place bottom">Пример IP-адреса 144.76.24.85</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="http://urengoyreklama.ru/static/img/0000/0003/5219/35219710.qkg94mhirf.jpg" alt="" style="width: 70%;">
+			<p class="place bottom">В доме есть много квартир, у нх есть номера</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="https://3dnews.ru/assets/external/illustrations/2012/01/24/623480/Data%20consumption%20information%20in%20the%20Windows%20Task%20Manager.png" alt="" style="width: 60%;">
+			<p class="place bottom">На сервере запущено много программ.У них тоже есть номера: «порты»</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="https://cdn.wp.nginx.com/wp-content/uploads/2015/10/nginx-vs-apache.png" alt="" style="width: 70%;">
+			<p class="place bottom">Сайты живут в программе «веб-сервер» Номер порта веб-сервера: 80 http://sintez.pw:80»</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="http://rusrep.ru/images/upload/245960_photo.jpeg" alt="" style="width: 27%;">
+			<p class="place bottom">Но и это не всё. Коммуналки! В коммуналках есть комнаты</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="http://joxi.ru/nAynl4YuYQ71Xr.jpg" alt="" style="width: 85%;">
+			<p class="place bottom">Веб-сервер-коммуналка содержит виртуалхосты</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="place top" src="http://joxi.ru/nAynl4YuYQ71Xr.jpg" alt="" style="width: 85%;">
+			<p class="place bottom">Веб-сервер отдаёт нужный сайт по его названию. Например: sintez.pw</p>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Письмо человеку</h2>
+		<p>Адрес дома: Кострома, Ленина, 95</p>
+		<p>Квартира: 300</p>
+		<p>Кому: Ивану Иванову</p>
+	</section>
+
+	<section class="slide">
+		<h2>Письмо сайту</h2>
+		<p>Адрес дома (сервера): 144.76.24.85</p>
+		<p>Квартира (порт): 80</p>
+		<p>Кому (какой сайт показать): sintez.pw</p>
+	</section>
+
+	<section class="slide">
+		<h2>Где же находится сайт</h2>
+		<p>На железном сервере в сети.</p>
+		<p>Внутри программы веб-сервера.</p>
+		<p>На своём виртуальном хосте.</p>
+		<h2>Разобрались!</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Но как браузер узнаёт адрес?</h2>
+		<p>Дано: sintez.pw</p>
+		<p>Надо получить: 144.76.24.85</p>
+	</section>
+
+	<section class="slide">
+		<h2>C помощью системы DNS</h2>
+		<figure>
+			<img src="http://joxi.ru/nAynl4YuYQ7pnr.jpg" alt="">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Правда, всё не так просто</h2>
+		<p>DNS очень большая и медленная распределённая система с огромным количеством серверов.</p>
+		<p>Ведь DNS должна быть очень надёжной.</p>
+	</section>
+
+	<section class="slide">
+		<h2>DNS обновляется медленно</h2>
+		<p>Срок добавления и обновления записей в DNS может составлять до 48 часов</p>
+	</section>
+
+	<section class="slide">
+		<h2>Службы доставки</h2>
+		<figure class="center">
+			<img src="http://joxi.ru/brRaqWeCJnKazA.jpg" alt="">
+		</figure>
+		<p>Возят самолётами, поездами, автомобилями, почтальонами/курьерами.</p>
+		<p>Доставляют конверты, бандероли, посылки, коробки.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Службы доставки в сети</h2>
+		<p>Служба доставки протокол TCP/IP</p>
+		<p>Доставляет HTTP-пакеты.</p>
+	</section>
+
+	<section class="slide">
+		<h2>HTTP-запрос и HTTP-Ответ</h2>
+		<figure>
+			<img src="http://xbb.uz/files/illustrations/web/http.png" alt="">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure class="place top center"><img src="http://joxi.ru/8Anx1ezSjRDb3m.jpg" alt=""></figure>
+	</section>
+
+	<section class="slide">
+		<h2>Как браузер собирает сайт?</h2>
+		<p class="text-center">Браузер не закачивает «готовый сайт». Вспомним Икею</p>
+		<figure><img style="width: 100%;" src="http://joxi.ru/l2ZXzOLFwNg66r.jpg" alt=""></figure>
+	</section>
+
+	<section class="slide">
+		<h2>Исходные детали для браузера</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>IMG</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Перед сборкой сайта</h2>
+		<ul>
+			<li>HTML-код, 1 штука.</li>
+			<li>CSS-код, 1 штука.</li>
+			<li>Картинки, 10 штук.</li>
+			<li>Инструкции нет.</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>А где инструкция?</h2>
+		<p>А инструкция — это стандарты HTML и CSS. Они зашиты внутрь браузера.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Повторим?</h2>
+		<ol>
+			<li>Где физически расположен сайт? На веб-сервере в дата-центре.</li>
+			<li>Как об этом узнаёт ваш браузер? С помощью DNS по названию сайта.</li>
+			<li>Какую службу доставки использует браузер? Протоколы TCP/IP и HTTP.</li>
+			<li>Из каких частей и по каким инструкциям браузер создаёт картинку сайта? HTML и CSS код, картинки и стандарты.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<figure class="place top"><img src="http://joxi.ru/5mddKJzhkpb31m.jpg" alt=""></figure>
+	</section>
+
+	<section class="slide">
+		<h2></h2>
+	</section>
+
+
+	<section class="slide">
+		<h2>Git</h2>
+		<p>Распределённая система управления версиями.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Типичная проблема с версиями</h2>
+		<p>Организация файлов у дизайнера:</p>
+		<ul>
+			<li>source </li>
+			<li>|- nerds_index_final.psd </li>
+			<li>|- nerds_index_final_2.ps</li>
+			<li>|- nerds_index_final_19.psd </li>
+			<li>|- ... </li>
+			<li>|- nerds_catalog_final.psd</li>
+			<li class="next">|- nerds_catalog_final_2.psd</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="vcs">
+		<h2>Система контроля версий</h2>
+
+		<div class="half">
+			<p>Физический диск</p>
+			<ul>
+				<li><b>document.txt</b> (актуальная версия, 04.04.2016 18:30)</li>
+			</ul>
+		</div>
+		<div class="half next" style="border: 3px dashed gray">
+			<p>«Рабочая область»</p>
+			<ul>
+				<li class="next"><b>document.txt</b> (04.04.2016 18:30)</li>
+				<li>document.txt (03.04.2016 20:18)</li>
+				<li>document.txt (03.04.2016 15:10)</li>
+				<li>document.txt (02.04.2016 14:56)</li>
+				<li>document.txt (01.04.2016 23:58)</li>
+				<li>document.txt (22.01.2016 08:37)</li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: relative; top: -141px; left: 20px; font-size: 3rem;">
+			<b>commit</b>
+		</p>
+
+		<style>
+			#vcs .half {
+				float: left;
+				width: 50%;
+				padding: 0 23px;
+			}
+			#vcs ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="csv">
+		<h2>Репозиторий</h2>
+		<p>Набор файлов (папка), изменение которых отслеживает система контроля версий</p>
+		<h2>Коммит</h2>
+		<p>Состояние всех файлов репозитория, зафиксированное в определённый момент времени.</p>
+		<h2>Хэш коммита</h2>
+		<p>Идентификатор коммита (<i>442fd26)</p>
+		<style>
+			#csv {
+				padding-top: 50px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="checkout">
+		<h2>Чекаут</h2>
+		<p>Переключение между версиями файлов</p>
+		<div class="half">
+			<p>Физический диск</p>
+			<ul>
+				<li>document.txt (актуальная версия, 04.04.2016 18:30)</li>
+			</ul>
+		</div>
+		<div class="half" style="border: 3px dashed gray">
+			<p>«Рабочая область»</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: relative; top: -141px; left: 20px; font-size: 2.5rem;">
+			<b>git checkout b7732b1</b>
+		</p>
+		<style>
+			#checkout {
+				padding-top: 50px;
+			}
+			#checkout .half {
+				float: left;
+				width: 50%;
+				padding: 0 23px;
+			}
+			#checkout ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="checkout-2">
+		<h2>Чекаут</h2>
+		<p>Переключение между версиями файлов</p>
+		<div class="half">
+			<p>Физический диск</p>
+			<ul>
+				<li>document.txt (старая версия, 22.01.2016 08:37)</li>
+			</ul>
+		</div>
+		<div class="half" style="border: 3px dashed gray">
+			<p>«Рабочая область»</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<style>
+			#checkout-2 {
+				padding-top: 50px;
+			}
+			#checkout-2 .half {
+				float: left;
+				width: 50%;
+				padding: 0 23px;
+			}
+			#checkout-2 ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Что значит «распеделённая система»</h2>
+		<ol>
+			<li>У каждого пользователя есть свой репозиторий. </li>
+			<li class="next">Номера версий сложные, рассчитываются по текущему содержимому репозитория.</li>
+			<li class="next">Работать быстро и удобно.</li>
+			<li class="next">Но нужна синхронизация репозиториев, так как проект — один и его состояние должно быть у всех одинаковым.</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="push">
+		<h2>Совместная работа</h2>
+		<div class="half" style="border: 3px dashed gray">
+			<p>«Рабочая область» Васи</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: absolute; top: 535px; left: 223px; font-size: 2.5rem;">
+			<b>git push</b>
+		</p>
+		<div class="half half--server next" style="border: 3px dashed gray">
+			<p>«Рабочая область» на сервере</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<style>
+			#push {
+				padding-top: 50px;
+			}
+			#push .half {
+				float: left;
+				width: 48%;
+				padding: 0 23px;
+				margin: 0 1%;
+			}
+			#push ul li::before {
+				opacity: 0 !important;
+			}
+			#push .half--server {
+				position: relative;
+			}
+			#push .half--server::before {
+				content: '=>';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				color: blue;
+				left: -46px;
+				font-size: 66px;
+				font-weight: bold;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="pull">
+		<h2>Совместная работа</h2>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Вася</p>
+			<ul>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Сервер</p>
+			<ul>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: absolute; top: 30px; right: 180px; font-size: 2.5rem;">
+			<b>git pull</b>
+		</p>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Иван</p>
+			<ul class="next">
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<style>
+			#pull {
+				padding-top: 50px;
+			}
+			#pull .pack {
+				float: left;
+				width: 31%;
+				padding: 0 23px;
+				margin: 0 1%;
+			}
+			#pull ul li::before {
+				opacity: 0 !important;
+			}
+			#pull .pack--server {
+				position: relative;
+			}
+			#pull .pack--server::before {
+				content: '=>';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				color: blue;
+				left: -46px;
+				font-size: 66px;
+				font-weight: bold;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="pull-2">
+		<h2>Совместная работа</h2>
+		<div class="pack pack--s" style="border: 3px dashed gray">
+			<p>Сервер</p>
+			<ul>
+				<li class="next" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<div class="pack pack--v" style="border: 3px dashed gray">
+			<p>Вася</p>
+			<ul>
+				<li class="next" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Иван</p>
+			<ul>
+				<li style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<style>
+			#pull-2 {
+				padding-top: 50px;
+			}
+			#pull-2 .pack {
+				float: left;
+				width: 31%;
+				padding: 0 23px;
+				margin: 0 1%;
+				line-height: 1.6;
+			}
+			#pull-2 .pack--s {
+				position: relative;
+				left: 33%;
+			}
+			#pull-2 .pack--v {
+				position: relative;
+				left: -33%;
+			}
+			#pull-2 ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="merge">
+		<h2>А если одновременно?</h2>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Вася</p>
+			<ul>
+				<li class="next" style="color: orange">document.txt <i>db8a20</i></li>
+				<li class="" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>...</li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Сервер</p>
+			<ul>
+				<li></li>
+				<li></li>
+				<li class="" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>...</li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Иван</p>
+			<ul>
+				<li class="next" style="color: green">document.txt <i>991e8a</i></li>
+				<li style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>...</li>
+			</ul>
+		</div>
+		<style>
+			#merge {
+				padding-top: 50px;
+			}
+			#merge .pack {
+				float: left;
+				width: 31%;
+				padding: 0 23px;
+				margin: 0 1%;
+				line-height: 1.6;
+			}
+			#merge ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>А если одновременно?</h2>
+		<p>Кто-то первый отправит свои изменения на сервер. Предположим, это был Иван.</p>
+		<p class="next">Тогда Вася не сможет отправить свои изменения, пока не получит обновления от сервера.</p>
+		<p class="next">Так как изменения были в одном и том же файле, git постарается «склеить» (merge) две версии файла — от Ивана и от Васи.</p>
+	</section>
+
+	<section class="slide">
+		<h2>А если одновременно?</h2>
+		<p>Далее возможны два варианта:</p>
+		<ol>
+			<li class="next">Изменения были в разных местах документа, и их удалось <span style="color: green">«слить»</span>. Система создаёт коммит с информацией о «слиянии» и позволяет отправить оба коммиат на сервер.</li>
+			<li class="next">Изменения (по мнению git) были в одной и той же части документа. В этом случае git получает т.н. <span style="color: red">«конфликт»</span>. Вася должен вручную решить, какой участок файла следует оставить, после чего изменения можно будет отправить на сервер.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Домашечка</h2>
+		<p>Верстаем</p>
+		<p>Грузим на GIT</p>
+	</section>
+
+	<section class="slide" id="work-15">
+		<h1 class="place center">Пока-пока!</h1>
+		<p class="place center bottom"><a href="https://vk.com/away.php?to=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSc1UQG0itYRM6C3fQGxyqaGhjJABpWLiwxpDsQweFuNQXXPMw%2Fviewform%3Fc%3D0%26w%3D1&el=snippet">Отвечаем на вопросы</a></p>
+		<style>
+			#work-15 h1 {
+				font-size: 80px;
+			}
+		</style>
+	</section>
+
+	<footer class="badge">
+		<p>sintezcorp</p>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
